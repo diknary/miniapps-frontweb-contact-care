@@ -1,0 +1,41 @@
+const map = [
+    { key: "ALAMAT_TAGIH", text:"" },
+    { key: "BRANCH", text:"" },
+    { key: "COMPANY_ADDRESS", text:"" },
+    { key: "COMPANY_NAME", text:"" },
+    { key: "CONTRACT_NUMBER", text:"" },
+    { key: "CUST_NUMBER", text:"" },
+    { key: "DOB", text:"" },
+    { key: "EMAIL_ADDRESS", text:"" },
+    { key: "Flag", text:"" },
+    { key: "GENDER", text:"" },
+    { key: "HOME_PHONE_NUMBER", text:"" },
+    { key: "ID_CARD_KTP", text:"" },
+    { key: "INCOME", text:"" },
+    { key: "INSERTED_DATE", text:"" },
+    { key: "KTP_ADDRESS", text:"" },
+    { key: "MARITAL_STATUS", text:"" },
+    { key: "MOBILE_PHONE_NUMBER", text:"" },
+    { key: "MOTHER_NAME", text:"" },
+    { key: "NAMA_LENGKAP", text:"" },
+    { key: "NICK_NAME", text:"" },
+    { key: "NPWP_NUMBER", text:"" },
+    { key: "OFFICE_PHONE_NUMBER", text:"" },
+    { key: "OID", text:"" },
+    { key: "PERIOD_OF_WORK", text:"" },
+    { key: "POB", text:"" },
+    { key: "PPD_DATE", text:"" },
+    { key: "RELIGION", text:"" },
+    { key: "RESIDENCE_ADDRESS", text:"" },
+    { key: "Rejected", text:"" },
+    { key: "SPOUSE_CONTACT_NUMBER", text:"" },
+    { key: "SPOUSE_ID_NO", text:"" },
+    { key: "SPOUSE_NAME", text:"" },
+    { key: "UPDATED_DATE", text:"" },
+    { key: "WA_NUMBER", text:"" }
+];
+
+
+export default {
+    map:map,
+};
