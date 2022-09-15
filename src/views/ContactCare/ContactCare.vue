@@ -88,6 +88,12 @@ export default {
                   value2: "Case Create",
                   value3: "images/icons/data-kontrak",
                   value4: "IDM.CONTACTCARE"
+                },
+                {
+                  value1: "/contact-care/update",
+                  value2: "Case Update",
+                  value3: "images/icons/data-kontrak",
+                  value4: "IDM.CONTACTCARE"
                 }
               ]
             }

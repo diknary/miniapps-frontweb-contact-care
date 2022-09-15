@@ -22,6 +22,7 @@ import EGRDataParkir from "../views/EvaluatorGR/DataParkir/DataParkir.vue";
 import EGRReport from "../views/EvaluatorGR/Report/Report.vue";
 import ContactCare from "../views/ContactCare/ContactCare.vue";
 import CaseCreate from "../views/ContactCare/Pages/CaseCreate.vue";
+import CaseUpdate from "../views/ContactCare/Pages/CaseUpdate.vue";
 
 const router = new VueRouter({
   mode: "history",
@@ -178,6 +179,13 @@ const router = new VueRouter({
             requiresData: false,
           },
         },
+        {
+          path: "update",
+          component: CaseUpdate,
+          meta: {
+            requiresData: false,
+          },
+        }
       ]
     },
     {

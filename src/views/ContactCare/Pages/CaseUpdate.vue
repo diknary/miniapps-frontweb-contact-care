@@ -7,7 +7,7 @@
       v-bind:error="error"
       v-on:close="clearError"
     />
-    <h3>Case Creation</h3>
+    <h3>Case Update</h3>
     <div class="menu__content px-5">
       <form v-on:submit.prevent>
         <div class="case-creation">
@@ -647,15 +647,6 @@
             :isLoading="loading"
             v-on:click="save"
             >Simpan</base-button
-          >
-
-          <base-button
-            type="button"
-            isSecondary
-            :isDisabled="true"
-            :isLoading="loading"
-            v-on:click="send"
-            >Kirim</base-button
           >
         </div>
       </form>
