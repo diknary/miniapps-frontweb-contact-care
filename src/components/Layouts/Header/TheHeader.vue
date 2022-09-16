@@ -103,7 +103,7 @@ export default {
       this.changeDefaultHeaders();
       this.changeDefaultBackground();
       this.changeToAdira();
-      this.$router.push("/sessiontimeout");
+      this.$router.push("/login");
     },
     toggleBtnCaretHandler() {
       this.btnCaret = !this.btnCaret;

@@ -65,7 +65,7 @@ export default {
           status: 200,
           data: [
             {
-              fullname: "TEST UUK"
+              fullname: "Gardira"
             }
           ]
         };
