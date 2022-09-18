@@ -46,8 +46,8 @@ export default {
     ]),
 
     async initializeApp() {
-      const nik = this.$route.query.NIK;
-      const brid = this.$route.query.BRID;
+      const nik = '12345';//this.$route.query.NIK;
+      const brid = '12345';//this.$route.query.BRID;
       try {
         // const responseMtx = await Ad1acc.getPermissionMatrixEGR(nik);
         // const responseAcc = await Ad1acc.getEmployeeInfo(nik); //"10018854", "10007876");
@@ -91,7 +91,7 @@ export default {
                 },
                 {
                   value1: "/contact-care/update",
-                  value2: "Case Update",
+                  value2: "Update Ticket",
                   value3: "images/icons/data-kontrak",
                   value4: "IDM.CONTACTCARE"
                 }
@@ -133,21 +133,10 @@ export default {
       this.isLoading = false;
     },
     setJobMatrix(nik, brid, matrix) {
-      console.log("USER MATRIX : ", matrix);
-      const dataParkirIdx = matrix.findIndex((item) => {
-        return item.applicationAlias == "IDM.EVALUATORGR.DATAPARKIR";
-      });
-      const reportIdx = matrix.findIndex((item) => {
-        return item.applicationAlias == "IDM.EVALUATORGR.REPORT";
-      });
-      if (dataParkirIdx > -1) {
-        let job = "PIC_CABANG";
-        if (reportIdx > -1) {
-          brid = "0000";
-          job = "PIC_HO";
-        }
+      const isLoggedIn = true;
+      console.log(matrix)
+      if (isLoggedIn) {
         this.loginNik({ nik: nik, brid: brid });
-        this.changeJobGr(job);
       } else {
         this.resetPermissionMatrix();
         this.$router.push("/unauthorized").catch(() => {});

@@ -3,23 +3,8 @@ import VueRouter from "vue-router";
 import store from "../store/index";
 import { HELPER_INITAPP } from "../shared/utils/helpers";
 
-// import ProfilNasabah from "../views/ProfilNasabah/Pages/ProfilNasabah.vue";
-// import Dashboard from "../views/Dashboard/Pages/Dashboard.vue";
-// import Customer from "../views/Customer/Pages/Customer.vue";
-// import Login from "../views/Login/Pages/Login.vue";
-// import Penawaran from "../views/Penawaran/Pages/Penawaran.vue";
-// import PengajuanAplikasi from "../views/PengajuanAplikasi/Pages/PengajuanAplikasi.vue";
-// import Lainnya from "../views/PenangananKonsumen/Pages/PenangananKonsumen.vue";
-// import DataKontrak from "../views/DataKontrak/Pages/DataKontrak.vue";
-// import Collection from "../views/Collection/Pages/Collection.vue";
-// import Insurance from "../views/Insurance/Pages/Insurance.vue";
-// import InformasiPembayaran from "../views/InformasiPembayaran/Pages/InformasiPembayaran.vue";
-// import InformasiCollateral from "../views/InformasiCollateral/Pages/InformasiCollateral.vue";
 import SessionTimeOut from "../views/TimeOut/Pages/SessionTimeout.vue";
 import Unauthorized from "../views/Unauthorized/Pages/Unauthorized.vue";
-import EvaluatorGR from "../views/EvaluatorGR/EvaluatorGR.vue";
-import EGRDataParkir from "../views/EvaluatorGR/DataParkir/DataParkir.vue";
-import EGRReport from "../views/EvaluatorGR/Report/Report.vue";
 import ContactCare from "../views/ContactCare/ContactCare.vue";
 import CaseCreate from "../views/ContactCare/Pages/CaseCreate.vue";
 import CaseUpdate from "../views/ContactCare/Pages/CaseUpdate.vue";
@@ -186,29 +171,6 @@ const router = new VueRouter({
             requiresData: false,
           },
         }
-      ]
-    },
-    {
-      path: "/evaluator-gr",
-      component: EvaluatorGR,
-      meta: {
-        requiresAuth: false,
-      },
-      children: [
-        {
-          path: "dataparkir",
-          component: EGRDataParkir,
-          meta: {
-            requiresData: false,
-          },
-        },
-        {
-          path: "report",
-          component: EGRReport,
-          meta: {
-            requiresData: false,
-          },
-        },
       ]
     },
     { path: "/sessiontimeout", component: SessionTimeOut },
